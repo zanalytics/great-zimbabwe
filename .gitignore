@@ -159,7 +159,6 @@ cython_debug/
 .idea/
 .pre-commit-config.yaml
 create_postgres.sh
-data/
 docker-compose.yml
 great_zimbabwe/notebooks
 great_zimbabwe/extract.py

@@ -9,7 +9,7 @@ install:  ## Install dependencies for the package for development
 	poetry run pre-commit install
 
 test:  ## Run the unit tests
-	poetry run pytest -vv
+	poetry run pytest -vv -p no:warnings
 
 pre-commit:  ## Run the pre-commit hooks
 	poetry run pre-commit run --all-files
