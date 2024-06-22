@@ -17,6 +17,7 @@ def create_temp_tables(spark: SparkSession, seed_directory: str) -> None:
     Returns
     -------
     None
+
     """
     directory_path = Path(seed_directory)
     spark.sql("CREATE DATABASE IF NOT EXISTS bronze")
@@ -53,6 +54,7 @@ def create_spark_environment(
     -------
     SparkSession
         Configured Spark session.
+
     """
     if "DATABRICKS_RUNTIME_VERSION" in os.environ:
         spark = SparkSession.builder.appName("app").getOrCreate()

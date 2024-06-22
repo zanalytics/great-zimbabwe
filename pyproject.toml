@@ -12,6 +12,7 @@ delta-spark = "^3.1.0"
 requests = "^2.31.0"
 loguru = "^0.7.2"
 pydantic = "^2.6.4"
+ruff = "^0.4.10"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
@@ -20,7 +21,7 @@ ipykernel = "^6.25.1"
 mypy = "^1.1.1"
 pre-commit = "^3.2.1"
 pytest = "^7.2.2"
-ruff = "^0.0.286"
+ruff = "^0.4.10"
 
 
 [tool.poetry.group.data-analysis.dependencies]
@@ -29,8 +30,8 @@ jupyter = "^1.0.0"
 
 [tool.ruff]
 line-length = 79
-select = ["ALL"]
-ignore = [
+lint.select = ["ALL"]
+lint.ignore = [
     "ANN101",  # Missing type annotation for self in method is allowed
     "ANN102",  # Missing type annotation for cls in classmethod is allowed
     "C901",    # High McCabe complexity is allowed
