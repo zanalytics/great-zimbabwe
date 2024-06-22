@@ -157,9 +157,3 @@ cython_debug/
 .ruff_cache
 .python-version
 .idea/
-.pre-commit-config.yaml
-create_postgres.sh
-docker-compose.yml
-great_zimbabwe/notebooks
-great_zimbabwe/extract.py
-tests/

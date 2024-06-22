@@ -32,8 +32,8 @@ line-length = 79
 
 [tool.ruff]
 line-length = 79
-select = ["ALL"]
-ignore = [
+lint.select = ["ALL"]
+lint.ignore = [
     "ANN101",  # Missing type annotation for self in method is allowed
     "ANN102",  # Missing type annotation for cls in classmethod is allowed
     "C901",    # High McCabe complexity is allowed
@@ -58,7 +58,7 @@ ignore = [
     "TD003",   # Missing issue link in todo is allowed
 ]
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "tests/*" = [
     "ANN001",  # Missing type annotation for function arguments is allowed
     "ANN201",  # Missing return type annotation for public function is allowed
